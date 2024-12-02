@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.first-paragraph {
+  color: aquamarine;
+  font-size: 25px;
+  font-weight: 900;
+  font-style: italic;
+}
