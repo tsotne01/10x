@@ -9,3 +9,15 @@
   font-weight: 900;
   font-style: italic;
 }
+
+.main-block {
+  padding-left: 10em;
+  padding-right: 10em;
+  font-size: large;
+  background-color: cadetblue;
+}
+
+.image {
+  display: inline;
+  border-radius: 10px;
+}
