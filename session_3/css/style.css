@@ -34,20 +34,31 @@ body {
   background-color: rgba(125, 189, 167, 0.575);
 }
 
-.list li {
+.list,
+.list-footer {
+  list-style: none;
+}
+
+.list-footer a {
+  background-color: inherit;
+}
+
+.list a {
   margin: 0 2em;
+  padding: 5px 10px;
+  text-decoration: none;
+  /* transition: translate 0.8s, scale 0.8s; */
 }
 
 .list-link {
   background-color: rgb(50, 122, 182);
   margin-right: 20px;
   border-radius: 10px;
-  transition: translate 0.8s, scale 0.8s;
 }
 
-.list-link:hover {
-  transform: translateY(-5px);
-  transform: scale(1.2);
+.list a:hover {
+  /* transform: translateY(-5px);
+  transform: scale(1.2); */
   background-color: rgba(46, 46, 155, 0.527);
 }
 
@@ -55,8 +66,6 @@ body {
 .list,
 .footer a,
 .header a {
-  list-style: none;
-  text-decoration: none;
   color: black;
 }
 
