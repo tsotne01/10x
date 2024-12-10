@@ -57,7 +57,10 @@ body {
   font-weight: 500;
   border-bottom: solid 1px #e1cfff;
 }
-
+.table__company-rows td:not(:first-child):not(:last-child),
+.table__company-header tr th:not(:first-child):not(:last-child) {
+  width: 20%;
+}
 /* ტეიბლის ელემენტების ჰოვერი ბექსგრაუნდის შეცვლა ტექსტის ფერის შეცვლა და გაბოლდება */
 .table__company-rows:hover,
 .table__company-header tr:hover {
