@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #611ecb;
+  font-family: "Inter", serif;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.table__company-rows:not(:last-child) {
+  border-bottom: solid 1.5px #e1cfff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.table-company {
+  width: 1000px;
+  background-color: #ffffff;
+  text-align: left;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+.table__company-rows {
+  height: 60px;
+  color: #333333;
+  /* overflow: hidden; */
+  font-weight: 400;
+  padding: 0 20px;
+}
+
+.table__company-rows td,
+.table__company-header th {
+  padding: 0 20px;
+}
+
+.table__company-header {
+  height: 40px;
+  color: #0f1419;
+  background-color: #f5f5f5;
+}
+
+.table__company-header tr th {
+  font-weight: 500;
+  border-bottom: solid 1px #e1cfff;
+}
+
+/* ტეიბლის ელემენტების ჰოვერი ბექსგრაუნდის შეცვლა ტექსტის ფერის შეცვლა და გაბოლდება */
+.table__company-rows:hover,
+.table__company-header tr:hover {
+  background-color: #e1cfff;
+  color: #4005a0;
+  font-weight: 700;
+}
+
+/* ჰედერის მომრგვალება ჰოვერის დროს */
+.table__company-header:first-child th:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.table__company-header:first-child th:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+/* ჰოვერის დროსაც რომ იყოს მომრგვალებული ბოლო ელემენტი ტეიბლ ბოდიში */
+.table__company-body:last-child td:first-child {
+  border-radius: 0px 0px 0px 10px;
+}
+
+.table__company-body:last-child td:last-child {
+  border-radius: 0px 0px 10px 0px;
+}
+
+/* ვარსკვლავის ჰოვერის დროს ანიმაცია */
+.star:hover {
+  animation: shakingStar 1s ease-in-out 0s infinite normal forwards;
+}
+/* თითონ ანიმაცია */
+@keyframes shakingStar {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
