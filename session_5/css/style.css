@@ -1,0 +1,331 @@
+:root {
+  --header-bg-color: linear-gradient(#faeaca, #efcfa4);
+  --header-btn-bg-color: linear-gradient(#9bb6b3, #5f888a);
+  --header-btn-txt-color: #d6f2ec;
+  --btn-width: 152px;
+  --btn-height: 34px;
+  --btn-border-radius: 99px;
+  --header-content-width: 990px;
+  --header-content-height: 44px;
+  --header-border-radius: 99px;
+  --heaeder-img-height: 961px;
+
+  --main-header-txt-color: #a9895d;
+  --secondary-header-txt-color: #4a3211;
+
+  --first-sect-h1-color: #eef4f8;
+  --first-sect-h3-color: #79969c;
+  --first-sect-p-color: #586061;
+
+  --first-sect-height: 579px;
+
+  --second-bg-img-height: 588px;
+
+  --magician-img-height: 395px;
+  --magician-img-width: 537px;
+
+  --main-bg-color: #131d24;
+
+  --footer-bg-color: linear-gradient(#faeaca, #efcfa4);
+
+  --footer-txt-color: #4a3211;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url(../images/hero_background.png);
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1440 / 1025;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--first-sect-height);
+  background-color: var(--main-bg-color);
+  /* flex-direction: column; */
+}
+
+.call_to_action {
+  display: flex;
+  width: var(--header-content-width);
+}
+
+.text-card {
+  width: 237.33px;
+  height: 346px;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  text-align: center;
+  margin: 0 64px;
+  padding: 16.5px 0;
+}
+
+/* .text-card:not(:last-child) {
+  border-right: 1px solid var(--first-sect-h3-color);
+} */
+
+.call_to_action span {
+  height: 379px;
+  width: 1px;
+  background-color: #232d33;
+}
+
+.text-card div:first-child {
+  height: 98px;
+}
+
+.text-card h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--first-sect-h1-color);
+}
+.text-card h3 {
+  font-size: 14px;
+  margin-bottom: 50px;
+  color: var(--first-sect-h3-color);
+}
+
+.text-card p {
+  font-size: 12px;
+  margin-bottom: 68px;
+  color: var(--first-sect-p-color);
+}
+
+.menu {
+  width: min(var(--header-content-width), 70%);
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  background-image: var(--header-bg-color);
+  height: var(--header-content-height);
+  width: var(--header-content-width);
+  border-radius: var(--header-border-radius);
+}
+.navitaion__menu-ulist {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navitaion__menu-ulist a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.navitaion__menu-ulist li:not(:first-child) a {
+  color: var(--main-header-txt-color);
+}
+
+.navitaion__menu-ulist li:not(:last-child) {
+  border-right: 1px solid #edcea3;
+  padding-right: 20px;
+}
+
+.navitaion__menu-ulist li:first-child a {
+  color: #4a3211;
+}
+.btn {
+  border: none;
+  border-radius: var(--btn-border-radius);
+  height: var(--btn-height);
+  width: var(--btn-width);
+}
+
+.get__book-header {
+  background-image: var(--header-btn-bg-color);
+  vertical-align: middle;
+  color: var(--header-btn-txt-color);
+}
+
+.get__book-header:after {
+  content: url(../images/material-symbols_menu-book.png);
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.stars {
+  display: flex;
+  gap: 10px;
+}
+
+.arcane_academy {
+  background-image: url(../images/Call_To_Action.png);
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1440 / 1025;
+  height: var(--second-bg-img-height);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arcane_academy-cntnt {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.arcane_academy-cntnt h1 {
+  color: var(--first-sect-h1-color);
+  margin-bottom: 60px;
+  font-size: 36px;
+}
+
+.arcane_academy-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 273px;
+  font-size: 12px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.arcane-btn:first-child {
+  border-radius: var(--btn-border-radius) 0 0 var(--btn-border-radius);
+  background-image: var(--header-bg-color);
+  color: #4a3211;
+}
+
+.arcane-btn:last-child {
+  border-radius: 0 var(--btn-border-radius) var(--btn-border-radius) 0;
+  background-image: var(--header-btn-bg-color);
+  color: #d6f2ec;
+}
+
+.arcane-btn:first-child::after {
+  content: url(../images/btn-after-watch-vid.png);
+  margin-left: 6px;
+  margin-top: 4.5px;
+  margin-bottom: 4.5px;
+  margin-right: 4.5px;
+  height: 9.3px;
+  width: 7.59px;
+}
+
+.arcane-btn:last-child::after {
+  content: url(../images/btn-after-play-game.png);
+  margin-left: 6px;
+  margin-top: 4.5px;
+  margin-bottom: 4.5px;
+  margin-right: 4.5px;
+  height: 9.3px;
+  width: 7.59px;
+}
+
+.magician_student {
+  background-color: var(--main-bg-color);
+}
+
+.magician_text {
+  width: 303px;
+  height: 299px;
+  color: #eef4f8;
+}
+.magician_text h1 {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.magician_text p {
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+.magician_student div img {
+  margin-right: 120px;
+}
+.get_book-magician {
+  background-image: var(--header-bg-color);
+  color: #503817;
+}
+
+.get_book-magician::after {
+  content: url(../images/book-brown.png);
+}
+
+footer section:first-child {
+  height: 320px;
+  background-image: var(--footer-bg-color);
+  display: flex;
+  justify-content: space-around;
+}
+
+.text {
+  height: 175px;
+  width: 567px;
+  margin: 50px;
+  color: #4a3211;
+  display: flex;
+}
+
+.text__right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 124px;
+}
+
+.text h1 {
+  margin-bottom: 30px;
+}
+
+.text p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.text a {
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: inherit;
+  font-size: 12px;
+}
+
+.icon {
+  margin: 54.74px 54.74px 56.86px 0;
+}
+
+footer section:last-child {
+  height: 65px;
+  background-color: #131d24;
+  color: #eef4f8;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer section:last-child div:first-child {
+  margin-right: min(969px, 60%);
+}
+
+footer section:last-child div:first-child a {
+  margin-right: 20px;
+}
+footer section:last-child a {
+  text-decoration: none;
+  color: inherit;
+}
