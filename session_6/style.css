@@ -43,6 +43,7 @@ li a {
 li a:hover {
   color: #7e5cad;
 }
+
 #about {
   display: flex;
   justify-content: space-between;
@@ -52,6 +53,12 @@ li a:hover {
 
 #about img {
   height: 150px;
+  cursor: zoom-in;
+  transition: all 0.8s;
+}
+
+#about img:hover {
+  transform: scale(1.2);
 }
 
 #about {
