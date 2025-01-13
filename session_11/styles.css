@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.form-wrapper {
+  min-height: 989px;
+  width: 472px;
+  padding: 60px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 15px;
+  & h1 {
+    font-size: 42px;
+    margin-bottom: 42px;
+  }
+}
+
+.fullname-label {
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+}
+
+.name-last-name-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  & input,
+  textarea {
+    border-radius: 5px;
+    padding: 12px;
+    outline: solid 1px rgba(66, 80, 102, 0.4);
+    border: none;
+    width: 50%;
+  }
+}
+
+#locations {
+  background-image: url(./assets/LeftIcon.svg);
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
+  width: 100%;
+  height: 40px;
+  outline: solid 1px rgba(66, 80, 102, 0.4);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+label[for="full-name"],
+label[for="locations"],
+label[for="companyinfo"],
+label[for="case"],
+label[for="numbers"],
+label[for="creditinfo"] {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+label[for="case"] {
+  margin-left: 20px;
+  position: relative;
+}
+
+label[for="case"]::before {
+  content: url(./assets/InfoIcon.png);
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+}
+
+label[for="radio1"],
+label[for="radio2"] {
+  font-size: 20px;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  accent-color: black;
+  margin-right: 2.7px;
+}
+
+.radio__buttons,
+.radio__buttons-right,
+.radio__buttons-left {
+  display: flex;
+  align-items: center;
+}
+
+.radio__buttons-right {
+  align-items: center;
+}
+
+.radio__buttons {
+  gap: 32px;
+}
+
+.company-info__case-wrapper,
+.radio__buttons,
+.credit__information {
+  margin-bottom: 32px;
+}
+
+.company-info {
+  margin-bottom: 10px;
+}
+
+#companyinfo {
+  border-radius: 5px;
+  padding: 12px;
+  outline: solid 1px rgba(66, 80, 102, 0.4);
+  border: none;
+  width: 100%;
+}
+
+select,
+option {
+  --bg-image-height: 12px;
+  background-image: url(./assets/flag.png);
+  background-repeat: no-repeat;
+  background-position: 10% calc(50% - var(--bg-image-height) / 7);
+  height: var(--bg-image-height);
+  width: 16px;
+}
+
+.company-case textarea {
+  height: 104px;
+  width: 100%;
+}
+
+.phone__number {
+  border: none;
+  border-radius: 5px;
+  outline: solid 1px rgba(66, 80, 102, 0.4);
+  height: 40px;
+  display: flex;
+  margin-bottom: 32px;
+  & > * {
+    height: 40px;
+  }
+
+  & select {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-right: 1px solid rgba(66, 80, 102, 0.4);
+    font-size: 14px;
+    width: 100px;
+    text-align: center;
+  }
+}
+
+.input__number {
+  border: none;
+  outline: none;
+  height: 100%;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.credit__information div {
+  display: flex;
+  gap: 10px;
+}
+
+.credit__information input {
+  border-radius: 5px;
+  padding: 12px;
+  outline: solid 1px rgba(66, 80, 102, 0.4);
+  border: none;
+  margin-bottom: 10px;
+  &:first-child {
+    width: 100%;
+  }
+}
+
+#numbers {
+  font-size: 14px;
+}
+
+.checkbox__wrapper {
+  display: flex;
+  gap: 32px;
+  & div {
+    display: flex;
+    align-items: center;
+    gap: 2.7px;
+  }
+  margin-bottom: 42px;
+}
+
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  accent-color: rgba(66, 80, 102, 0.4);
+}
+
+button[type="submit"] {
+  height: 40px;
+  width: 104px;
+  background-color: rgba(19, 106, 243, 1);
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button[type="submit"]::after {
+  content: url(./assets/ArrowRight.svg);
+  margin-left: 8px;
+}

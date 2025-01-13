@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <h1>Input Form</h1>
+      <form>
+        <div>
+          <label for="full-name" class="fullname-label"> Full Name </label>
+          <div class="name-last-name-wrapper">
+            <input
+              type="text"
+              name="fullname"
+              id="full-name"
+              placeholder="John"
+            />
+            <input
+              type="text"
+              name="lastname"
+              id="last-name"
+              placeholder="Doe"
+            />
+          </div>
+        </div>
+        <div class="location-wrapper">
+          <label for="locations">Location</label>
+          <select name="choose-locations" id="locations">
+            <option value="">New York, United States</option>
+            <option value="">New York, United States</option>
+            <option value="">New York, United States</option>
+            <option value="">New York, United States</option>
+            <option value="">New York, United States</option>
+          </select>
+        </div>
+        <div class="radio__buttons">
+          <div class="radio__buttons-left">
+            <input type="radio" name="radio" id="radio1" checked />
+            <label for="radio1">radio 1</label>
+          </div>
+          <div class="radio__buttons-right">
+            <input type="radio" name="radio" id="radio2" />
+            <label for="radio2">radio 2</label>
+          </div>
+        </div>
+        <div class="company-info__case-wrapper">
+          <label for="companyinfo">Company information</label>
+          <div class="company-info">
+            <input type="text" id="companyinfo" placeholder="Company name" />
+          </div>
+          <label for="case">Describe your case</label>
+          <div class="company-case">
+            <textarea
+              name="case"
+              id="case"
+              placeholder="Tell us about your use case..."
+            ></textarea>
+          </div>
+        </div>
+        <div>
+          <label for="numbers">Phone number</label>
+          <div class="phone__number">
+            <select name="numbers" id="numbersDropdown">
+              <option value="">+995</option>
+              <option value="">+995</option>
+              <option value="">+995</option>
+              <option value="">+995</option>
+              <option value="">+995</option>
+            </select>
+            <input type="text" class="input__number" id="numbers" />
+          </div>
+        </div>
+        <label for="creditinfo">Credit card information</label>
+        <div class="credit__information">
+          <input type="text" id="creditinfo" placeholder="Credit card no." />
+          <div>
+            <input type="text" placeholder="MM / YY" />
+            <input type="text" placeholder="CCV" />
+          </div>
+        </div>
+        <div class="checkbox__wrapper">
+          <div>
+            <input type="checkbox" id="value1" />
+            <label for="value1">Value 1</label>
+          </div>
+          <div>
+            <input type="checkbox" id="value2" />
+            <label for="value2">Value 2</label>
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
