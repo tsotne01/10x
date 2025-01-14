@@ -10,6 +10,7 @@ body {
   overflow-y: scroll;
   overscroll-behavior: none;
   scrollbar-width: none;
+  overflow-x: hidden;
 }
 
 header h1 {
@@ -81,7 +82,7 @@ header nav ul {
 .card__wrapper {
   display: flex;
 
-  overflow-x: scroll;
+  overflow-x: hidden;
   scrollbar-width: none;
   & > div {
     margin: 0 max(3.5vw, 35px);
