@@ -47,7 +47,14 @@ body {
     width: 50%;
   }
 }
-
+textarea {
+  min-height: 80px;
+  width: 100%;
+  height: 89px;
+  resize: block;
+  max-height: 200px;
+  padding: 10px;
+}
 #locations {
   background-image: url(./assets/LeftIcon.svg);
   background-repeat: no-repeat;
