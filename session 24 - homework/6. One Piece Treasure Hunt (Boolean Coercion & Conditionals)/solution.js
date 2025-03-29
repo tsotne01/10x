@@ -6,3 +6,9 @@
 // Example:
 // console.log(isTreasureSpot("gold")); // true
 // console.log(isTreasureSpot(0)); // false
+
+const isTreasureSpot=(content)=> Boolean(content);
+
+console.log(isTreasureSpot("gold")); // true
+console.log(isTreasureSpot(0)); // false
+
