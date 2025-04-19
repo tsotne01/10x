@@ -2,3 +2,6 @@
 // Example input: `[ 'Dormammu Attack', 'Multiverse Glitch', 'Ancient One’s Warning', 'Time Loop', 'Portal Opening' ]`
 // Expected output: `['Ancient One’s Warning', 'Time Loop', 'Portal Opening']`
 
+const events = [ 'Dormammu Attack', 'Multiverse Glitch', 'Ancient One’s Warning', 'Time Loop', 'Portal Opening' ];
+
+console.log(events.slice(-3));
