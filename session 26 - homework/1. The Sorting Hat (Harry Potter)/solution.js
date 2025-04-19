@@ -6,6 +6,6 @@
 const characters = ['Harry', 'Hermione', 'Ron', 'Draco'];
 const houses = ["Gryffindor","Ravenclaw","Slytherin","Hufflepuff"];
 
-const assignedHouses = characters.map((character)=> character.concat(houses[Math.floor(Math.random() * houses.length)]));
+const assignedHouses = characters.map((character)=> character.concat(` - ${houses[Math.floor(Math.random() * houses.length)]}`));
 
 console.log(assignedHouses);
