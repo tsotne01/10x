@@ -32,7 +32,7 @@ function foo(numbers){
         return transformToBinary(number)
     });
     console.log("Binary conversion: ",binaryArray);
-    console.log("Highest Value",Math.max(...numbers));
+    console.log("Highest Value: ",Math.max(...numbers));
 }
 
 const numbers = [3, 7, 15, 22];
